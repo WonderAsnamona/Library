@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Library</h1>
+        <p>
+            Please enter the following info:
+        </p>
+        <form action="AddBook.do" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Book Title:</td>
+                    <td><input type="text" name="title" required=""></td>
+                </tr>
+                <tr>
+                    <td>ISBN:</td>
+                    <td><input type="text" name="isbn" required=""></td>
+                </tr>
+                <tr>
+                    <td>Author No1 Name and Surname:</td>
+                    <td><input type="text" name="author1" required="" placeholder="Name Surname"></td>
+                </tr>
+                <tr>
+                    <td>Author No2 Name and Surname:(Optional)</td>
+                    <td><input type="text" name="author2"></td>
+                </tr>
+                <tr>
+                    <td>Publish Date:</td>
+                    <td><input type="text" name="publishDate" required=""></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="number" name="price" required=""></td>
+                </tr>
+                <tr>
+                    <td>File:</td>
+                    <td><input type="file" name="bookCopy" required=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Add Book"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
